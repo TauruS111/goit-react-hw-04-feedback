@@ -34,7 +34,7 @@ const App = () => {
 
   return (
     <div>
-      <Section title="Будь ласка, залиште відгук">
+      <Section title="Please leave feedback">
         <FeedbackOptions
           options={Object.keys(feedback)}
           onLeaveFeedback={handleFeedback}
@@ -42,7 +42,7 @@ const App = () => {
       </Section>
 
       {totalFeedback === 0 ? (
-        <Notification message="Немає відгуків" />
+        <Notification message="There is no feedback" />
       ) : (
         <Section title="Статистика">
           <Statistics
